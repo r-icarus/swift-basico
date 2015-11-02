@@ -1,0 +1,470 @@
+➜  ~  xcrun swift
+Welcome to Apple Swift version 2.1 (700.1.101.6 700.1.76). Type :help for assistance.
+  1> print("Hola Mundo")
+Hola Mundo
+  2> var x = 4
+x: Int = 4
+  3> var y = 42.5
+y: Double = 42.5
+  4> x = y
+repl.swift:4:5: error: cannot assign value of type 'Double' to type 'Int'
+x = y
+    ^
+
+  4> x = Int(y)
+  5> x
+$R0: Int = 42
+  6> let z = 42
+z: Int = 42
+  7> x = 43
+  8> z = 43
+repl.swift:8:3: error: cannot assign to value: 'z' is a 'let' constant
+z = 43
+~ ^
+repl.swift:6:1: note: change 'let' to 'var' to make it mutable
+let z = 42
+^~~
+var
+
+  8> a = true
+repl.swift:8:1: error: use of unresolved identifier 'a'
+a = true
+^
+
+  8> var a = true
+a: Bool = true
+  9> var nombre = "Ricardo"
+nombre: String = "Ricardo"
+ 10> x
+$R1: Int = 43
+ 11> x = 1_000_000_000
+ 12> x
+$R2: Int = 1000000000
+ 13> var apellido = "Echavarria"
+apellido: String = "Echavarria"
+ 14> nombre + " "+ apellido
+repl.swift:14:14: error: consecutive statements on a line must be separated by ';'
+nombre + " "+ apellido
+             ^
+             ;
+
+ 14> var completo = nombre + " "+ apellido
+repl.swift:14:29: error: consecutive statements on a line must be separated by ';'
+var completo = nombre + " "+ apellido
+                            ^
+                            ;
+
+ 14> var completo = nombre +" "+ apellido 
+repl.swift:14:22: error: consecutive statements on a line must be separated by ';'
+var completo = nombre +" "+ apellido
+                     ^
+                     ;
+repl.swift:14:28: error: consecutive statements on a line must be separated by ';'
+var completo = nombre +" "+ apellido
+                           ^
+                           ;
+
+ 14> var completo = nombre + apellido
+completo: String = "RicardoEchavarria"
+ 15> completo = "\(nombre) \(apellido)"
+ 16> completo
+$R3: String = "Ricardo Echavarria"
+ 17> completo = "\(nombre) \(apellido)" 
+ 18. var uno = "\(2-1)"
+uno: String = "1"
+ 19> var char = "A"
+char: String = "A"
+ 20> let favoriteChar : Character = "A"
+favoriteChar: Character = "A"
+ 21> let suma = 1 + 1
+suma: Int = 2
+ 22> let resta = 4-3
+resta: Int = 1
+ 23> let resta = 4-3 
+ 24. ^C
+ 23> let multiplicacion  = 2 * 4
+multiplicacion: Int = 8
+ 24> let division = 8/2
+division: Int = 4
+ 25> let modulo = 23%4
+modulo: Int = 3
+ 26> let moduloDouble = 23.5%4.3
+moduloDouble: Double = 2.0000000000000009
+ 27> let divisionDouble = 40/2.5
+divisionDouble: Double = 16
+ 28> let binaryNumber = 0b101
+binaryNumber: Int = 5
+ 29> let octalNumber = 0o12
+octalNumber: Int = 10
+ 30> let hexadecimalNumber = 0x32
+hexadecimalNumber: Int = 50
+ 31> let scientificNotation = 4.434e-10
+scientificNotation: Double = 0.00000000044339999999999999
+ 32> typealias EightBits = UInt8
+ 33> var reg : EightBits = 0
+reg: EightBits = 0
+ 34> let auto = (2014, "BMW", "Class 5")
+auto: (Int, String, String) = {
+  0 = 2014
+  1 = "BMW"
+  2 = "Class 5"
+}
+ 35> auto.0
+$R4: Int = 2014
+ 36> auto.2
+$R5: String = "Class 5"
+ 37> auto.3
+repl.swift:37:1: error: value of tuple type '(Int, String, String)' has no member '3'
+auto.3
+^~~~ ~
+
+ 37> print(x)
+1000000000
+ 38> x = nil
+repl.swift:38:5: error: nil cannot be assigned to type 'Int'
+x = nil
+    ^
+
+ 38> let posibleNumero = "123"
+posibleNumero: String = "123"
+ 39> let numberoEnCadena = Int(posibleNumero)
+numberoEnCadena: Int? = 123
+ 40> numberoEnCadena!
+$R6: Int = 123
+ 41> var numero : Int? = nil
+numero: Int? = nil
+ 42> numero!
+fatal error: unexpectedly found nil while unwrapping an Optional value
+Execution interrupted. Enter Swift code to recover and continue.
+Enter LLDB commands to investigate (type :help for assistance.)
+ 43> numero != nil
+$R7: Bool = false
+ 44> var dulces = ["Mazapan", "Chocolate", "Skwinkles"]
+dulces: [String] = 3 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Skwinkles"
+}
+ 45> var calificaciones : [Double] = [7,8,9,10]
+calificaciones: [Double] = 4 values {
+  [0] = 7
+  [1] = 8
+  [2] = 9
+  [3] = 10
+}
+ 46> dulces[0]
+$R8: String = "Mazapan"
+ 47> dulces[3]
+fatal error: Array index out of range
+Execution interrupted. Enter Swift code to recover and continue.
+Enter LLDB commands to investigate (type :help for assistance.)
+ 48> dulces.append("Paleta")
+ 49> dulces
+$R9: [String] = 4 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Skwinkles"
+  [3] = "Paleta"
+}
+ 50> calificaciones
+$R10: [Double] = 4 values {
+  [0] = 7
+  [1] = 8
+  [2] = 9
+  [3] = 10
+}
+ 51> calificaciones.append("9")
+repl.swift:51:23: error: cannot convert value of type 'String' to expected argument type 'Double'
+calificaciones.append("9")
+                      ^~~
+
+ 51> calificaciones = [9,"10"]
+repl.swift:51:21: error: cannot convert value of type 'String' to expected element type 'Double'
+calificaciones = [9,"10"]
+                    ^~~~
+
+ 51> dulces += ["M&M"]
+ 52> dulces
+$R11: [String] = 5 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Skwinkles"
+  [3] = "Paleta"
+  [4] = "M&M"
+}
+ 53> dulces += ["Jolly Ranger", "Chicles"]
+ 54> dulces
+$R12: [String] = 7 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Skwinkles"
+  [3] = "Paleta"
+  [4] = "M&M"
+  [5] = "Jolly Ranger"
+  [6] = "Chicles"
+}
+ 55> dulces[3]
+$R13: String = "Paleta"
+ 56> dulces[3] = "Tutsi Pop"
+ 57> dulces
+$R14: [String] = 7 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Skwinkles"
+  [3] = "Tutsi Pop"
+  [4] = "M&M"
+  [5] = "Jolly Ranger"
+  [6] = "Chicles"
+}
+ 58> dulces.removeLast()
+$R15: String = "Chicles"
+ 59> dulces
+$R16: [String] = 6 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Skwinkles"
+  [3] = "Tutsi Pop"
+  [4] = "M&M"
+  [5] = "Jolly Ranger"
+}
+ 60> dulces.insert("Chicles", atIndex: 2)
+ 61> dulces
+$R17: [String] = 7 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Chicles"
+  [3] = "Skwinkles"
+  [4] = "Tutsi Pop"
+  [5] = "M&M"
+  [6] = "Jolly Ranger"
+}
+ 62> var scoville = ["Poblano": 1_000, "Serrano": 1_200, "Habanero": 1_000_000]
+scoville: [String : Int] = 3 key/value pairs {
+  [0] = {
+    key = "Serrano"
+    value = 1200
+  }
+  [1] = {
+    key = "Poblano"
+    value = 1000
+  }
+  [2] = {
+    key = "Habanero"
+    value = 1000000
+  }
+}
+ 63> scoville["Habanero"]
+$R18: Int? = 1000000
+ 64> scoville["Jalapeño"]
+$R19: Int? = nil
+ 65> scoville["Habanero"]!
+$R20: Int = 1000000
+ 66> scoville["Jalapeño"]!
+fatal error: unexpectedly found nil while unwrapping an Optional value
+Execution interrupted. Enter Swift code to recover and continue.
+Enter LLDB commands to investigate (type :help for assistance.)
+ 67> scoville["Jalapeño"] = 5_000
+ 68> scoville
+$R21: [String : Int] = 4 key/value pairs {
+  [0] = {
+    key = "Serrano"
+    value = 1200
+  }
+  [1] = {
+    key = "Habanero"
+    value = 1000000
+  }
+  [2] = {
+    key = "Jalapeño"
+    value = 5000
+  }
+  [3] = {
+    key = "Poblano"
+    value = 1000
+  }
+}
+ 69> scoville["Jalapeño"] = nil 
+ 70> scoville
+$R22: [String : Int] = 3 key/value pairs {
+  [0] = {
+    key = "Serrano"
+    value = 1200
+  }
+  [1] = {
+    key = "Habanero"
+    value = 1000000
+  }
+  [2] = {
+    key = "Poblano"
+    value = 1000
+  }
+}
+ 71> scoville["Jalapeño"] = 5_000 
+ 72> scoville.removeValueForKey("Jalapeño")
+$R23: Int? = 5000
+ 73> scoville
+$R24: [String : Int] = 3 key/value pairs {
+  [0] = {
+    key = "Serrano"
+    value = 1200
+  }
+  [1] = {
+    key = "Habanero"
+    value = 1000000
+  }
+  [2] = {
+    key = "Poblano"
+    value = 1000
+  }
+}
+ 74> scoville.removeValueForKey("Jalapeño")
+$R25: Int? = nil
+ 75> dulces
+$R26: [String] = 7 values {
+  [0] = "Mazapan"
+  [1] = "Chocolate"
+  [2] = "Chicles"
+  [3] = "Skwinkles"
+  [4] = "Tutsi Pop"
+  [5] = "M&M"
+  [6] = "Jolly Ranger"
+}
+ 76> papitas = ["Sabritas", "Ruffles", "Cheetos", "Doritos"]
+repl.swift:76:1: error: use of unresolved identifier 'papitas'
+papitas = ["Sabritas", "Ruffles", "Cheetos", "Doritos"]
+^~~~~~~
+
+ 76> var papitas = ["Sabritas", "Ruffles", "Cheetos", "Doritos"] 
+papitas: [String] = 4 values {
+  [0] = "Sabritas"
+  [1] = "Ruffles"
+  [2] = "Cheetos"
+  [3] = "Doritos"
+}
+ 77> var papitas = ["Sabritas", "Ruffles", "Cheetos", "Doritos"] 
+papitas: [String] = 4 values {
+  [0] = "Sabritas"
+  [1] = "Ruffles"
+  [2] = "Cheetos"
+  [3] = "Doritos"
+}
+ 78> var bebidas = ["CocaCola", "Cafe", "V8"]
+bebidas: [String] = 3 values {
+  [0] = "CocaCola"
+  [1] = "Cafe"
+  [2] = "V8"
+}
+ 79> let botanas = [dulces, papitas, bebidas]
+botanas: [[String]] = 3 values {
+  [0] = 7 values {
+    [0] = "Mazapan"
+    [1] = "Chocolate"
+    [2] = "Chicles"
+    [3] = "Skwinkles"
+    [4] = "Tutsi Pop"
+    [5] = "M&M"
+    [6] = "Jolly Ranger"
+  }
+  [1] = 4 values {
+    [0] = "Sabritas"
+    [1] = "Ruffles"
+    [2] = "Cheetos"
+    [3] = "Doritos"
+  }
+  [2] = 3 values {
+    [0] = "CocaCola"
+    [1] = "Cafe"
+    [2] = "V8"
+  }
+}
+ 80> botanas[1]
+$R27: [String] = 4 values {
+  [0] = "Sabritas"
+  [1] = "Ruffles"
+  [2] = "Cheetos"
+  [3] = "Doritos"
+}
+ 81> botanas[1][2]
+$R28: String = "Cheetos"
+ 82> botanas[1][2] 
+$R29: String = "Cheetos"
+ 83> let arregloVacio = [Int]()
+arregloVacio: [Int] = 0 values
+ 84> arregloVacio += [1,33,50]
+repl.swift:84:14: error: left side of mutating operator isn't mutable: 'arregloVacio' is a 'let' constant
+arregloVacio += [1,33,50]
+~~~~~~~~~~~~ ^
+repl.swift:83:1: note: change 'let' to 'var' to make it mutable
+let arregloVacio = [Int]()
+^~~
+var
+
+ 84> var vacio = [Int]()
+vacio: [Int] = 0 values
+ 85> vacio += [20,60,34]
+ 86> vacio
+$R30: [Int] = 3 values {
+  [0] = 20
+  [1] = 60
+  [2] = 34
+}
+ 87> vacio = []
+ 88> vacio
+$R31: [Int] = 0 values
+ 89> var diccionarioVacio = Dictionary<String, Double>()
+diccionarioVacio: [String : Double] = 0 key/value pairs
+ 90> vacio = Array<Int>()
+ 91> for dulce in dulces{ 
+ 92.     print("Me gusta comer \(dulce)") 
+ 93. }   
+Me gusta comer Mazapan
+Me gusta comer Chocolate
+Me gusta comer Chicles
+Me gusta comer Skwinkles
+Me gusta comer Tutsi Pop
+Me gusta comer M&M
+Me gusta comer Jolly Ranger
+ 94> for (index, dulce) in dulces{ 
+ 95.     print("\(dulce) esta en la posicion \(index)")
+ 96. } 
+repl.swift:94:23: error: 'String' is not convertible to '(@lvalue [String], @lvalue [String])'
+for (index, dulce) in dulces{
+                      ^~~~~~
+
+ 94> for (index, dulce) in enumerate(dulces){
+ 95.     print("\(dulce) esta en la posicion \(index)") 
+ 96. } 
+repl.swift:94:23: error: 'enumerate' is unavailable: call the 'enumerate()' method on the sequence
+for (index, dulce) in enumerate(dulces){
+                      ^~~~~~~~~
+Swift.enumerate:14:13: note: 'enumerate' has been explicitly marked unavailable here
+public func enumerate<Seq : SequenceType>(base: Seq) -> EnumerateSequence<Seq>
+            ^
+
+ 94> scoville
+$R32: [String : Int] = 3 key/value pairs {
+  [0] = {
+    key = "Serrano"
+    value = 1200
+  }
+  [1] = {
+    key = "Habanero"
+    value = 1000000
+  }
+  [2] = {
+    key = "Poblano"
+    value = 1000
+  }
+}
+ 95> for (llave, valor) in scoville { 
+ 96.     print("\(llave) tiene calificacion \(valor)") 
+ 97. }    
+Serrano tiene calificacion 1200
+Habanero tiene calificacion 1000000
+Poblano tiene calificacion 1000
+ 98> llave
+repl.swift:98:1: error: use of unresolved identifier 'llave'
+llave
+^~~~~
+
+ 98>  
