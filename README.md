@@ -83,5 +83,4 @@ Extensions
 
 Closures in Extensions
 
-
 http://swiftstub.com/937344983
