@@ -15,6 +15,8 @@ class TodoItem : NSObject, NSCoding {
     
     var image : UIImage?
     
+    var id : Int64?
+    
     
     override init(){
         super.init()
@@ -33,6 +35,11 @@ class TodoItem : NSObject, NSCoding {
         if let image = aDecoder.decodeObjectForKey("image") as? UIImage{
             self.image = image
         }
+        
+        let identifier = aDecoder.decodeInt64ForKey("identifier")
+        if identifier != 0{
+            self.id = identifier
+        }
     }
     
     
@@ -45,6 +52,9 @@ class TodoItem : NSObject, NSCoding {
         }
         if let image = self.image {
             aCoder.encodeObject(image, forKey: "image")
+        }
+        if let identifier = self.id {
+            aCoder.encodeInt64(identifier, forKey: "identifier")
         }
     }
 }

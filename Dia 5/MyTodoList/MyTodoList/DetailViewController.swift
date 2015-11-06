@@ -48,6 +48,19 @@ class DetailViewController : UIViewController, UIImagePickerControllerDelegate, 
                 self.item?.dueDate = date
                 self.todoList?.saveItems()
                 scheduleNotification(self.item!.todo!, date: date)
+                Api.save(self.item!, todoList: self.todoList!, responseBlock: {(error) -> Void in
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        if let err = error{
+                            print(err)
+                            self.showError()
+                            return
+                        } else {
+                            self.navigationController?.popViewControllerAnimated(true)
+                            return
+                        }
+                    })
+                })
             }
         }
     }
@@ -77,8 +90,13 @@ class DetailViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     func toggleDatePicker(){
-        imageView.hidden = datePicker.hidden
-        datePicker.hidden = !datePicker.hidden
+        if self.datePicker.hidden {
+            fadeInDatePicker()
+        } else {
+            fadeOutDatePicker()
+        }
+//        imageView.hidden = datePicker.hidden
+//        datePicker.hidden = !datePicker.hidden
     }
     
     //MARK: ViewController
@@ -92,6 +110,7 @@ class DetailViewController : UIViewController, UIImagePickerControllerDelegate, 
         tapGestureRecognizer.addTarget(self, action: "toggleDatePicker")
         dateLabel.addGestureRecognizer(tapGestureRecognizer)
         dateLabel.userInteractionEnabled = true
+        addGestureRecognizerToImage()
     }
     
     func showItem(){
@@ -102,5 +121,59 @@ class DetailViewController : UIViewController, UIImagePickerControllerDelegate, 
         if let img = item?.image {
             self.imageView.image = img
         }
+    }
+    
+    //MARK: Animaciones
+    func fadeInDatePicker(){
+        self.datePicker.alpha = 0
+        self.datePicker.hidden = false
+        UIView.animateWithDuration(1) { () -> Void in
+            self.datePicker.alpha = 1
+            self.imageView.alpha = 0
+        }
+    }
+    
+    func fadeOutDatePicker(){
+        self.datePicker.alpha = 1
+        self.datePicker.hidden = false
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.datePicker.alpha = 0
+            self.imageView.alpha = 1
+            }){ (completed) -> Void in
+                if(completed){
+                    self.datePicker.hidden = true
+                }
+        }
+    }
+    
+    
+    func addGestureRecognizerToImage(){
+        let gr = UITapGestureRecognizer()
+        gr.numberOfTapsRequired = 1
+        gr.numberOfTouchesRequired = 1
+        gr.addTarget(self, action: "rotate")
+        imageView.addGestureRecognizer(gr)
+        imageView.userInteractionEnabled = true
+    }
+    
+    func rotate(){
+        let animation = CABasicAnimation()
+        animation.duration = 1
+        animation.repeatCount = 2
+        animation.toValue = M_PI * 2.0
+        animation.keyPath = "transform.rotation.z"
+        print("animando la imagen")
+        self.imageView.layer.addAnimation(animation, forKey: "rotateImage")
+    }
+    
+    
+    //MARK: Web Service
+    func showError(){
+        let alert = UIAlertController(title: "Ups", message: "No pudimos guardar los cambios revisa tu conexión a internet", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "Ok", style: .Default) { (act) -> Void in
+            self.navigationController?.popViewControllerAnimated(true)
+        }
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
