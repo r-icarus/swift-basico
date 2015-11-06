@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5285F331BEBF3C6004CC26C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5285F321BEBF3C6004CC26C /* AppDelegate.swift */; };
+		A5285F351BEBF3C6004CC26C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5285F341BEBF3C6004CC26C /* ViewController.swift */; };
+		A5285F381BEBF3C6004CC26C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5285F361BEBF3C6004CC26C /* Main.storyboard */; };
+		A5285F3A1BEBF3C6004CC26C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5285F391BEBF3C6004CC26C /* Assets.xcassets */; };
+		A5285F3D1BEBF3C6004CC26C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5285F3B1BEBF3C6004CC26C /* LaunchScreen.storyboard */; };
+		A5285F481BEBF3C6004CC26C /* HonoluluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5285F471BEBF3C6004CC26C /* HonoluluTests.swift */; };
+		A5285F531BEBF3C6004CC26C /* HonoluluUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5285F521BEBF3C6004CC26C /* HonoluluUITests.swift */; };
+		A5285F611BEBF979004CC26C /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5285F601BEBF979004CC26C /* MapPin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5285F441BEBF3C6004CC26C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5285F271BEBF3C6004CC26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5285F2E1BEBF3C6004CC26C;
+			remoteInfo = Honolulu;
+		};
+		A5285F4F1BEBF3C6004CC26C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5285F271BEBF3C6004CC26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5285F2E1BEBF3C6004CC26C;
+			remoteInfo = Honolulu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5285F2F1BEBF3C6004CC26C /* Honolulu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honolulu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5285F321BEBF3C6004CC26C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5285F341BEBF3C6004CC26C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5285F371BEBF3C6004CC26C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5285F391BEBF3C6004CC26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5285F3C1BEBF3C6004CC26C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5285F3E1BEBF3C6004CC26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5285F431BEBF3C6004CC26C /* HonoluluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HonoluluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5285F471BEBF3C6004CC26C /* HonoluluTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonoluluTests.swift; sourceTree = "<group>"; };
+		A5285F491BEBF3C6004CC26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5285F4E1BEBF3C6004CC26C /* HonoluluUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HonoluluUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5285F521BEBF3C6004CC26C /* HonoluluUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonoluluUITests.swift; sourceTree = "<group>"; };
+		A5285F541BEBF3C6004CC26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5285F601BEBF979004CC26C /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5285F2C1BEBF3C6004CC26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5285F401BEBF3C6004CC26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5285F4B1BEBF3C6004CC26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5285F261BEBF3C6004CC26C = {
+			isa = PBXGroup;
+			children = (
+				A5285F311BEBF3C6004CC26C /* Honolulu */,
+				A5285F461BEBF3C6004CC26C /* HonoluluTests */,
+				A5285F511BEBF3C6004CC26C /* HonoluluUITests */,
+				A5285F301BEBF3C6004CC26C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5285F301BEBF3C6004CC26C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5285F2F1BEBF3C6004CC26C /* Honolulu.app */,
+				A5285F431BEBF3C6004CC26C /* HonoluluTests.xctest */,
+				A5285F4E1BEBF3C6004CC26C /* HonoluluUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5285F311BEBF3C6004CC26C /* Honolulu */ = {
+			isa = PBXGroup;
+			children = (
+				A5285F321BEBF3C6004CC26C /* AppDelegate.swift */,
+				A5285F341BEBF3C6004CC26C /* ViewController.swift */,
+				A5285F361BEBF3C6004CC26C /* Main.storyboard */,
+				A5285F391BEBF3C6004CC26C /* Assets.xcassets */,
+				A5285F3B1BEBF3C6004CC26C /* LaunchScreen.storyboard */,
+				A5285F3E1BEBF3C6004CC26C /* Info.plist */,
+				A5285F601BEBF979004CC26C /* MapPin.swift */,
+			);
+			path = Honolulu;
+			sourceTree = "<group>";
+		};
+		A5285F461BEBF3C6004CC26C /* HonoluluTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5285F471BEBF3C6004CC26C /* HonoluluTests.swift */,
+				A5285F491BEBF3C6004CC26C /* Info.plist */,
+			);
+			path = HonoluluTests;
+			sourceTree = "<group>";
+		};
+		A5285F511BEBF3C6004CC26C /* HonoluluUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5285F521BEBF3C6004CC26C /* HonoluluUITests.swift */,
+				A5285F541BEBF3C6004CC26C /* Info.plist */,
+			);
+			path = HonoluluUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5285F2E1BEBF3C6004CC26C /* Honolulu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5285F571BEBF3C6004CC26C /* Build configuration list for PBXNativeTarget "Honolulu" */;
+			buildPhases = (
+				A5285F2B1BEBF3C6004CC26C /* Sources */,
+				A5285F2C1BEBF3C6004CC26C /* Frameworks */,
+				A5285F2D1BEBF3C6004CC26C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Honolulu;
+			productName = Honolulu;
+			productReference = A5285F2F1BEBF3C6004CC26C /* Honolulu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5285F421BEBF3C6004CC26C /* HonoluluTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5285F5A1BEBF3C6004CC26C /* Build configuration list for PBXNativeTarget "HonoluluTests" */;
+			buildPhases = (
+				A5285F3F1BEBF3C6004CC26C /* Sources */,
+				A5285F401BEBF3C6004CC26C /* Frameworks */,
+				A5285F411BEBF3C6004CC26C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5285F451BEBF3C6004CC26C /* PBXTargetDependency */,
+			);
+			name = HonoluluTests;
+			productName = HonoluluTests;
+			productReference = A5285F431BEBF3C6004CC26C /* HonoluluTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5285F4D1BEBF3C6004CC26C /* HonoluluUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5285F5D1BEBF3C6004CC26C /* Build configuration list for PBXNativeTarget "HonoluluUITests" */;
+			buildPhases = (
+				A5285F4A1BEBF3C6004CC26C /* Sources */,
+				A5285F4B1BEBF3C6004CC26C /* Frameworks */,
+				A5285F4C1BEBF3C6004CC26C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5285F501BEBF3C6004CC26C /* PBXTargetDependency */,
+			);
+			name = HonoluluUITests;
+			productName = HonoluluUITests;
+			productReference = A5285F4E1BEBF3C6004CC26C /* HonoluluUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5285F271BEBF3C6004CC26C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "PiñataSoftware";
+				TargetAttributes = {
+					A5285F2E1BEBF3C6004CC26C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					A5285F421BEBF3C6004CC26C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A5285F2E1BEBF3C6004CC26C;
+					};
+					A5285F4D1BEBF3C6004CC26C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A5285F2E1BEBF3C6004CC26C;
+					};
+				};
+			};
+			buildConfigurationList = A5285F2A1BEBF3C6004CC26C /* Build configuration list for PBXProject "Honolulu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5285F261BEBF3C6004CC26C;
+			productRefGroup = A5285F301BEBF3C6004CC26C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5285F2E1BEBF3C6004CC26C /* Honolulu */,
+				A5285F421BEBF3C6004CC26C /* HonoluluTests */,
+				A5285F4D1BEBF3C6004CC26C /* HonoluluUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5285F2D1BEBF3C6004CC26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5285F3D1BEBF3C6004CC26C /* LaunchScreen.storyboard in Resources */,
+				A5285F3A1BEBF3C6004CC26C /* Assets.xcassets in Resources */,
+				A5285F381BEBF3C6004CC26C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5285F411BEBF3C6004CC26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5285F4C1BEBF3C6004CC26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5285F2B1BEBF3C6004CC26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5285F611BEBF979004CC26C /* MapPin.swift in Sources */,
+				A5285F351BEBF3C6004CC26C /* ViewController.swift in Sources */,
+				A5285F331BEBF3C6004CC26C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5285F3F1BEBF3C6004CC26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5285F481BEBF3C6004CC26C /* HonoluluTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5285F4A1BEBF3C6004CC26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5285F531BEBF3C6004CC26C /* HonoluluUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5285F451BEBF3C6004CC26C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5285F2E1BEBF3C6004CC26C /* Honolulu */;
+			targetProxy = A5285F441BEBF3C6004CC26C /* PBXContainerItemProxy */;
+		};
+		A5285F501BEBF3C6004CC26C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5285F2E1BEBF3C6004CC26C /* Honolulu */;
+			targetProxy = A5285F4F1BEBF3C6004CC26C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5285F361BEBF3C6004CC26C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5285F371BEBF3C6004CC26C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5285F3B1BEBF3C6004CC26C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5285F3C1BEBF3C6004CC26C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5285F551BEBF3C6004CC26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5285F561BEBF3C6004CC26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5285F581BEBF3C6004CC26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Honolulu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinatasoftware.Honolulu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5285F591BEBF3C6004CC26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Honolulu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinatasoftware.Honolulu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5285F5B1BEBF3C6004CC26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HonoluluTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinatasoftware.HonoluluTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honolulu.app/Honolulu";
+			};
+			name = Debug;
+		};
+		A5285F5C1BEBF3C6004CC26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HonoluluTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinatasoftware.HonoluluTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honolulu.app/Honolulu";
+			};
+			name = Release;
+		};
+		A5285F5E1BEBF3C6004CC26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HonoluluUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinatasoftware.HonoluluUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Honolulu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A5285F5F1BEBF3C6004CC26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HonoluluUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinatasoftware.HonoluluUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Honolulu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5285F2A1BEBF3C6004CC26C /* Build configuration list for PBXProject "Honolulu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5285F551BEBF3C6004CC26C /* Debug */,
+				A5285F561BEBF3C6004CC26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5285F571BEBF3C6004CC26C /* Build configuration list for PBXNativeTarget "Honolulu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5285F581BEBF3C6004CC26C /* Debug */,
+				A5285F591BEBF3C6004CC26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5285F5A1BEBF3C6004CC26C /* Build configuration list for PBXNativeTarget "HonoluluTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5285F5B1BEBF3C6004CC26C /* Debug */,
+				A5285F5C1BEBF3C6004CC26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5285F5D1BEBF3C6004CC26C /* Build configuration list for PBXNativeTarget "HonoluluUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5285F5E1BEBF3C6004CC26C /* Debug */,
+				A5285F5F1BEBF3C6004CC26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5285F271BEBF3C6004CC26C /* Project object */;
+}
